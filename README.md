@@ -1,7 +1,7 @@
 YFImagePager
 ============
 
-Inspired By KIImagePager(https://github.com/kimar/KIImagePager)
+Inspired By [KIImagePager](https://github.com/kimar/KIImagePager)
 
 Future Enhancements
 ----------
