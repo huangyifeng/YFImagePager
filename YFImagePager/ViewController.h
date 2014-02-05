@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YFImagePager.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<YFImagePagerDataSource, YFImagePagerDelegate>
 
 @end

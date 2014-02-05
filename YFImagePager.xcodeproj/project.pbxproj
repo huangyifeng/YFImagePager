@@ -21,6 +21,10 @@
 		C45E5E8F18A2321D00437178 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45E5E7118A2321D00437178 /* UIKit.framework */; };
 		C45E5E9718A2321D00437178 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C45E5E9518A2321D00437178 /* InfoPlist.strings */; };
 		C45E5E9918A2321D00437178 /* YFImagePagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C45E5E9818A2321D00437178 /* YFImagePagerTests.m */; };
+		C45E5EAC18A2332D00437178 /* YFImagePager.m in Sources */ = {isa = PBXBuildFile; fileRef = C45E5EAB18A2332D00437178 /* YFImagePager.m */; };
+		C45E5EB218A234A900437178 /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = C45E5EAF18A234A900437178 /* 44.png */; };
+		C45E5EB318A234A900437178 /* 55.png in Resources */ = {isa = PBXBuildFile; fileRef = C45E5EB018A234A900437178 /* 55.png */; };
+		C45E5EB418A234A900437178 /* 66.png in Resources */ = {isa = PBXBuildFile; fileRef = C45E5EB118A234A900437178 /* 66.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		C45E5E9418A2321D00437178 /* YFImagePagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YFImagePagerTests-Info.plist"; sourceTree = "<group>"; };
 		C45E5E9618A2321D00437178 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C45E5E9818A2321D00437178 /* YFImagePagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFImagePagerTests.m; sourceTree = "<group>"; };
+		C45E5EAA18A2332D00437178 /* YFImagePager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFImagePager.h; sourceTree = "<group>"; };
+		C45E5EAB18A2332D00437178 /* YFImagePager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFImagePager.m; sourceTree = "<group>"; };
+		C45E5EAF18A234A900437178 /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 44.png; sourceTree = "<group>"; };
+		C45E5EB018A234A900437178 /* 55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 55.png; sourceTree = "<group>"; };
+		C45E5EB118A234A900437178 /* 66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 66.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,7 @@
 				C45E5E9218A2321D00437178 /* YFImagePagerTests */,
 				C45E5E6C18A2321D00437178 /* Frameworks */,
 				C45E5E6B18A2321D00437178 /* Products */,
+				C45E5EAE18A234A900437178 /* Resource */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +122,7 @@
 		C45E5E7318A2321D00437178 /* YFImagePager */ = {
 			isa = PBXGroup;
 			children = (
+				C45E5EA918A2332D00437178 /* pager */,
 				C45E5E7C18A2321D00437178 /* AppDelegate.h */,
 				C45E5E7D18A2321D00437178 /* AppDelegate.m */,
 				C45E5E7F18A2321D00437178 /* Main.storyboard */,
@@ -150,6 +161,25 @@
 				C45E5E9518A2321D00437178 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C45E5EA918A2332D00437178 /* pager */ = {
+			isa = PBXGroup;
+			children = (
+				C45E5EAA18A2332D00437178 /* YFImagePager.h */,
+				C45E5EAB18A2332D00437178 /* YFImagePager.m */,
+			);
+			path = pager;
+			sourceTree = "<group>";
+		};
+		C45E5EAE18A234A900437178 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C45E5EAF18A234A900437178 /* 44.png */,
+				C45E5EB018A234A900437178 /* 55.png */,
+				C45E5EB118A234A900437178 /* 66.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +258,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45E5EB318A234A900437178 /* 55.png in Resources */,
+				C45E5EB418A234A900437178 /* 66.png in Resources */,
 				C45E5E8618A2321D00437178 /* Images.xcassets in Resources */,
+				C45E5EB218A234A900437178 /* 44.png in Resources */,
 				C45E5E7818A2321D00437178 /* InfoPlist.strings in Resources */,
 				C45E5E8118A2321D00437178 /* Main.storyboard in Resources */,
 			);
@@ -251,6 +284,7 @@
 			files = (
 				C45E5E8418A2321D00437178 /* ViewController.m in Sources */,
 				C45E5E7E18A2321D00437178 /* AppDelegate.m in Sources */,
+				C45E5EAC18A2332D00437178 /* YFImagePager.m in Sources */,
 				C45E5E7A18A2321D00437178 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
