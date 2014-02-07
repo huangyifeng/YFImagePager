@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBC788C518A4B4AD00AF216C /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC788C418A4B4AD00AF216C /* SDWebImage.framework */; };
+		BBE6D65418A4C21300982640 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE6D65318A4C21300982640 /* ImageIO.framework */; };
 		C45E5E6E18A2321D00437178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45E5E6D18A2321D00437178 /* Foundation.framework */; };
 		C45E5E7018A2321D00437178 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45E5E6F18A2321D00437178 /* CoreGraphics.framework */; };
 		C45E5E7218A2321D00437178 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45E5E7118A2321D00437178 /* UIKit.framework */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BBC788C418A4B4AD00AF216C /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Frameworks/SDWebImage.framework; sourceTree = "<group>"; };
+		BBE6D65318A4C21300982640 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		C45E5E6A18A2321D00437178 /* YFImagePager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFImagePager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45E5E6D18A2321D00437178 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C45E5E6F18A2321D00437178 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE6D65418A4C21300982640 /* ImageIO.framework in Frameworks */,
+				BBC788C518A4B4AD00AF216C /* SDWebImage.framework in Frameworks */,
 				C45E5E7018A2321D00437178 /* CoreGraphics.framework in Frameworks */,
 				C45E5E7218A2321D00437178 /* UIKit.framework in Frameworks */,
 				C45E5E6E18A2321D00437178 /* Foundation.framework in Frameworks */,
@@ -111,6 +117,8 @@
 		C45E5E6C18A2321D00437178 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBE6D65318A4C21300982640 /* ImageIO.framework */,
+				BBC788C418A4B4AD00AF216C /* SDWebImage.framework */,
 				C45E5E6D18A2321D00437178 /* Foundation.framework */,
 				C45E5E6F18A2321D00437178 /* CoreGraphics.framework */,
 				C45E5E7118A2321D00437178 /* UIKit.framework */,
@@ -412,9 +420,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cybozu/workspace/for_fun/YFImagePager,
+					/Users/cybozu/workspace/for_fun/YFImagePager/Frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YFImagePager/YFImagePager-Prefix.pch";
 				INFOPLIST_FILE = "YFImagePager/YFImagePager-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -425,9 +439,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cybozu/workspace/for_fun/YFImagePager,
+					/Users/cybozu/workspace/for_fun/YFImagePager/Frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YFImagePager/YFImagePager-Prefix.pch";
 				INFOPLIST_FILE = "YFImagePager/YFImagePager-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,6 +514,7 @@
 				C45E5E9E18A2321D00437178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C45E5E9F18A2321D00437178 /* Build configuration list for PBXNativeTarget "YFImagePagerTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +523,7 @@
 				C45E5EA118A2321D00437178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "YFImagePager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #define kPageControlHeight  30
 
@@ -139,8 +140,22 @@
         {
             imageView.contentMode = [self.dataSource imagePager:self imageModeAtIndex:index];
         }
-        UIImage *image = [self.imageData objectAtIndex:index];
-        [imageView setImage:image];
+        NSObject *imageObj = [self.imageData objectAtIndex:index];
+        if ([imageObj isKindOfClass:[UIImage class]])
+        {
+            [imageView setImage:(UIImage *)imageObj];
+        }
+        else if ([imageObj isKindOfClass:[NSString class]])
+        {
+            NSURL *imageURL = [NSURL URLWithString:(NSString *)imageObj];
+            if (imageURL)
+            {
+                [imageView setImageWithURL:imageURL];
+            }
+        }
+        
+        
+        
     }
 }
 

@@ -28,7 +28,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"memory waring");
 }
 
 #pragma mark - YFImagePagerDataSource
@@ -38,8 +38,9 @@
     UIImage *image1 = [UIImage imageNamed:@"44.png"];
     UIImage *image2 = [UIImage imageNamed:@"55.png"];
     UIImage *image3 = [UIImage imageNamed:@"66.png"];
+    NSString *string1 = @"http://114.80.218.33/skin/images/map4.jpg";
     
-    return [NSArray arrayWithObjects:image1, image2, image3, nil];
+    return [NSArray arrayWithObjects:string1, image1, image2, image3, nil];
 }
 
 - (UIViewContentMode)imagePager:(YFImagePager *)pager imageModeAtIndex:(NSInteger)index
