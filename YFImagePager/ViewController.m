@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.imagePager.imageSwitchTimeInterval = 2;
+    self.imagePager.imageSwitchTimeInterval = 3;
     self.imagePager.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     self.imagePager.pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
 }
